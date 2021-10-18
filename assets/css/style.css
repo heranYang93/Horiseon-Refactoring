@@ -21,8 +21,7 @@ body {
     color: #ffffff;
 }
 
-/* header title normal format*/
-.header .titleNormal {
+.header h1 {
     display: inline-block;
     font-size: 48px;
 }
@@ -275,6 +274,6 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+.footer h4 {
     font-size: 20px;
 }
