@@ -6,6 +6,7 @@ CSS refactoring general comment:
 */
 
 /* General website default */
+/* Grouped all the default format at the beginning of the CSS */
 * {
     box-sizing: border-box;
     padding: 0;
