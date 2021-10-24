@@ -30,7 +30,7 @@ GIVEN a webpage meets accessibility standards
 
 ## Repository organisation
 [Repository]
-git@github.com:heranYang93/Horiseon-Refactoring.git)
+git@github.com:heranYang93/Horiseon-Refactoring.git
 
 [Structure]
 Horiseon-Refactoring/assets
