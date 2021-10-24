@@ -30,7 +30,7 @@ GIVEN a webpage meets accessibility standards
 
 ### Repository organisation
 [Repository]
-git@github.com:heranYang93/Horiseon-Refactoring.git)
+git@github.com:heranYang93/Horiseon-Refactoring.git
 
 [Structure]
 Horiseon-Refactoring/assets
@@ -62,6 +62,9 @@ CSS - refactoring general comment:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+<<<<<<< HEAD
 
 ### License
 Copyright (c) 2011-2017 GitHub Inc.
+=======
+>>>>>>> a4f0522d832c5ace6a244bfd614adcd7b95ef7cd
