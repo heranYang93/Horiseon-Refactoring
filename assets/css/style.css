@@ -1,5 +1,11 @@
-/*Creating default formats for the text*/
+/*
+CSS refactoring general comment:
+    New selectors are used, merging existing selectors with similar format
+    The new selectors are orgniased and regrouped in a way that follows the HTML structure
+    Unused old selectors are placed after line 185 for revision.
+*/
 
+/* General website default */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,10 +16,18 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Header */
-/* This section of cascade sheet applies to the header area given its uniqueness in appearance  */
+/* defaul paragraph and hyper link format has been grouped to increase readability */
+p {
+    font-size: 16px;
+}
 
-/* header default*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Header */
+/* Header - default*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,17 +35,19 @@ body {
     color: #ffffff;
 }
 
+/* Header - Normal title*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* header title emphasis format */
+/* Header - Emphasised title */
 .header .titleEmphasis {
     color: #d9dcd6;
 }
 
-.header section {
+/* Header - navigation bar - Default */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -39,25 +55,24 @@ body {
     font-size: 20px;
 }
 
-.header section ul {
+/* Header - navigation bar - general list format (list styles are set to none) */
+.header nav ul {
     list-style-type: none;
 }
 
-.header section ul li {
+/* Header - navigation bar - list item */
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-.header section ul li a {
+/* Header - navigation bar - list item - hyper link*/
+.header nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-/* Where is the best place to put p? */
-p {
-    font-size: 16px;
-}
-
+/* Central image */
 .hero {
     height: 800px;
     width: 100%;
@@ -67,18 +82,19 @@ p {
     background-position: center;
 }
 
-/* Body */
-
+/* Main content */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Reset content style to none to avoid preset format from certain browser */
 .content ul{
     list-style-type: none;
 }
 
+/* MAIN content block format*/
 .content ul li{
     margin-bottom: 20px;
     padding: 50px;
@@ -88,21 +104,82 @@ p {
     color: #ffffff;
 }
 
+/*
+Image formate rules are made more generalised,
+attempting to facilitate maintenance.
+When more blocks needs to be added,
+we can simply edit the html without touching the css
+*/
+
+/* images are set to be floating on the left (with right margin) by default */
 .content ul li img{
     float: left;
     margin-right: 25px;
     max-height: 200px;
 }
 
+/* to create staggered image organisation, images at EVEN blocks are floating on the right, with left margin */
 .content ul li:nth-child(even) img{
     float: right;
-    margin-right: 25px;
+    margin-left: 25px;
     max-height: 200px;
 }
 
+/* content block title */
 .content ul li h2{
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/*
+Aside - side bar illustrating 3 benefits
+*/
+
+/* Benefit list content block */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* Benefit list title */
+.benefits ul{
+    list-style-type: none;
+}
+
+/* Benefit list default */
+.benefits ul li{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+/* Benefit list title */
+.benefits ul li h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Benefit list images */
+.benefits ul li img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h4 {
+    font-size: 20px;
 }
 
 /*
@@ -184,38 +261,6 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-*/
-
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefits ul{
-    list-style-type: none;
-}
-
-.benefits ul li{
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefits ul li h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefits ul li img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 /*
 .benefit-lead {
@@ -267,13 +312,3 @@ p {
 }
 */
 
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h4 {
-    font-size: 20px;
-}

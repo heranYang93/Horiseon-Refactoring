@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<!--Trail for pushing with VScode-->
+<!--
+    HTML - Refactored Principles (HRP):
+
+    HRP1 - Container tags are reassigned to reflect their relevance to the structure (e.g. <div> are reassigned to <sections> where the area is more content-oriented)
+    HRP2 - Contents sharing same hierarchy are placed under a list
+    HRP3 - Adding 'alt' attributes to embed descriptive messages for assessibility reasons
+
+    Created descriptive messages when sections are folded, attempting to increase readability
+-->
 
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <title>Horiseon Social Solution</title>
 </head>
 
 <body>
+    <!--
+        Header with TITLE and NAVIGATION bar
+        H1, SEO
+    -->
     <header class="header">
-    <!-- <div> changed to <header> given the importance of this section-->
+    <!--
+        HRP1
+        <div> changed to <header> given the importance of this section
+    -->
+
         <h1>Hori<span class="titleEmphasis">seo</span>n</h1>
-        <section>
-            <!-- <div> changed to <section> given the content-oriented paragraph -->
+
+        <nav>
+        <!--
+            HRP1
+            <div> changed to <nav> to reflect the functionality
+            for navigation purposes
+        -->
             <ul>
-                <!--Added alternative for hrefs for accessibility reason: WHAT IS THE IMPACT?-->
+                <!--
+                    HRP3
+                    Added alternative for the list items below (hrefs)
+                    for accessibility reason
+                -->
                 <li>
                     <a href="#search-engine-optimization" alt="Search Engine Optimization">
                         Search Engine Optimization
                     </a>
                 </li>
+
                 <li>
                     <a href="#online-reputation-management" alt="Online Reputation Management">
                         Online Reputation Management
                     </a>
                 </li>
+                
                 <li>
                     <a href="#social-media-marketing" alt="Social Media Marketing">
                         Social Media Marketing</a>
                 </li>
             </ul>
-        </section>
+        </nav>
+
     </header>
 
-    <div class="hero"></div>
-
-    <section class="content">
+    <!-- decorative IMAGE with positive descriptive message-->
+    <div class="hero" alt="Horiseon social solution service enhancing your business"></div>
+    
+    <!--
+        Main content the three key CONTENT items
+        Search Engine Optimization, Online Reputation Management, Social Media Marketing
+    -->
+    <main class="content">
+    <!--
+        HRP1
+        <div> changed to <main> to reflect its importance in the webpage structure
+    -->
         <ul>
-            <li id="search-engine-optimization">
-                <!-- <div> added id "search-engine-optimization" to establish in-page -->
+        <!--
+        HRP2
+        Organised the three key areas as a list given their shared hierarchy in the webpage
+        as well as the similarity in format 
+        -->
+            <li>
                 <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Search engine optimization"/>
-                <h2>Search Engine Optimization</h2>
+                <!-- HRP3 -->
+                
+                <h2 id='search-engine-optimization'>Search Engine Optimization</h2>
+                <!--
+                    id attributes assgned to h2 instead of to the list item tag
+                    to functionalise the in-page reference on navigation bar
+                    aligning a descriptive HTML syntax -id- to the actual content
+                    which it is linked to due to facilitate readibility
+                -->
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </p>
             </li>
     
-            <li id="online-reputation-management">
+            <li>
                 <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Online reputation management"/>
-                <h2>Online Reputation Management</h2>
+                <!-- HRP3 -->
+
+                <h2 id='online-reputation-management'>Online Reputation Management</h2>
+                <!--
+                    id attributes assgned to h2 instead of to the list item tag
+                    to functionalise the in-page reference on navigation bar
+                    aligning a descriptive HTML syntax -id- to the actual content
+                    which it is linked to due to facilitate readibility
+                -->
                 <p>
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                 </p>
             </li>
     
-            <li id="social-media-marketing">
+            <li>
                 <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social media marketing"/>
-                <h2>Social Media Marketing</h2>
+                <!-- HRP3 -->
+
+                <h2 id='social-media-marketin'>Social Media Marketing</h2>
+                <!--
+                    id attributes assgned to h2 instead of to the list item tag
+                    to functionalise the in-page reference on navigation bar
+                    aligning a descriptive HTML syntax -id- to the actual content
+                    which it is linked to due to facilitate readibility
+                -->
                 <p>
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
                 </p>
             </li>
 
         </ul>
-    </section>
+    </main>
 
-    <section class="benefits">
+    <!--
+        Side content with three BENEFITS
+        Lead Generation, Brand Awareness, Cost Management
+    -->
+    <aside class="benefits">
         <ul>
+        <!--
+            HRP2
+            Organised the three benefits as a list given their shared hierarchy in the webpage
+            as well as the similarity in format 
+        -->
+
             <li>
                 <h3>Lead Generation</h3>
                 <img src="./assets/images/lead-generation.png" alt="lead generation"/>
+                <!-- HRP3 -->
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
@@ -80,6 +156,7 @@
             <li>
                 <h3>Brand Awareness</h3>
                 <img src="./assets/images/brand-awareness.png" alt="brand awareness"/>
+                <!-- HRP3 -->
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
@@ -88,20 +165,25 @@
             <li>
                 <h3>Cost Management</h3>
                 <img src="./assets/images/cost-management.png" alt="cost management"/>
+                <!-- HRP3 -->
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
             </li>
 
         </ul>
-    </section>
+    </aside>
 
-    <section class="footer">
+    <!--
+        Footer credit
+        2019 (highlight the content that could subject to update)
+    -->
+    <footer class="footer">
         <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </section>
+    </footer>
 </body>
 
 </html>
