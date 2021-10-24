@@ -1,15 +1,15 @@
-## Horiseon refactoring task
+### Title: Horiseon refactoring task
     As a marketing agency,
     Horiseon wanted a codebase that follows accessibility standards,
     so that their site is optimized for search engines.
 
-## Refactoring the Horiseon website
+### Description: Refactoring the Horiseon website
     Existing code has been provided (index.html and style.css)
     We need to improve it without changing its actual functionality,]
     while meeting a certain set of acceptance criteria,
     among which the accessibility is highlighted
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 GIVEN a webpage meets accessibility standards
 1. WHEN I view the source code;
@@ -28,7 +28,7 @@ GIVEN a webpage meets accessibility standards
     THEN I find a [concise], [descriptive] title
 
 
-## Repository organisation
+### Repository organisation
 [Repository]
 git@github.com:heranYang93/Horiseon-Refactoring.git)
 
@@ -40,12 +40,12 @@ Horiseon-Refactoring/assets
     ./requirements (contains client requests and acceptance criteria)
 index.html (Refactored html file with increased accessibility)
 
-## Access and review
+### Access and review
 Please review the website on a laptop device (width > 1060px),
 using the following URL:
 https://heranyang93.github.io/Horiseon-Refactoring/
 
-## General refactoring comments and principles
+### General refactoring comments and principles
 You can find the comments in each file.
 
  HTML - Refactored Principles (HRP):
@@ -58,7 +58,10 @@ CSS - refactoring general comment:
     [2] The new selectors are orgniased and regrouped in a way that follows the HTML structure
     [3] Unused old selectors are placed after line 185 for revision.
 
-## Contributing
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+### License
+Copyright (c) 2011-2017 GitHub Inc.
